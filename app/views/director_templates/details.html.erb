@@ -39,7 +39,7 @@
 
 
 <% matching_movies.each do |a_movie| %>
-<tr>
+  <tr>
       <td> <%= a_movie.id %> </td>
       <td> 
         <img src="<%= a_movie.image %>" width= "50"> 
@@ -50,5 +50,6 @@
       <td>
       <a href= "/movies/<%= a_movie.id %>"> Show details </a> 
       </td>
-    </tr>
+  </tr>
 <% end %>
+</table>
