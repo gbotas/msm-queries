@@ -10,8 +10,9 @@
     <th></th>
   </tr>
 
-
-  <% Director.all.each  do |a_director| %>
+  <% @list_of_directors = Director.all %>
+  
+  <% @list_of_directors.order({:dob => :desc}).each do |a_director| %>
     <tr>
       <td> <%= a_director.id %> </td>
       <td> 
